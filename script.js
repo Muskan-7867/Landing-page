@@ -19,6 +19,8 @@ fetch('/navbar.html')
     })
     .catch(error => console.error('Error fetching navbar:', error));
 
+
+
 // Event listener to hide background image on login button click
 document.getElementById('loginButton').addEventListener('click', function() {
     document.body.classList.add('hidden-background');

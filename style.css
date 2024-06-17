@@ -66,6 +66,69 @@ p {
   text-align: center;
   background-color: blue;
 }
+
+.contact {
+  background-color: aliceblue;
+  margin-top: 100px;
+  padding: 20px;
+  height: 400px;
+}
+.location {
+  background-color: white;
+  padding-left: 5%;
+}
+.location h2 {
+  color: black;
+}
+.location h4 {
+  color: blue;
+  font-weight: 0;
+  margin-top: 10px;
+}
+.cont-location {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px
+}
+.contact h3 {
+  color: blue;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+.contact h2 {
+  color: black;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+.help h4 {
+  color: blue;
+  margin-top: 10px;
+}
+
+.content p{
+  font-size: 20px;
+  font-style: italic;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+footer .footer-links,
+footer .footer-social {
+  margin: 10px 0;
+  margin-top: 20px;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -138,8 +201,53 @@ nav li:first-child {
 }
 .logo {
   font-size: 20px;
+  
+ 
 }
 
+
+
+
+.intern-content{
+  margin-top: 220px;
+  text-align: center;
+}
+.intern-content p{
+  color: gray;
+  width: 50%;
+  margin-left: 28%;
+}
+.intern-content h2{
+  font-size: 3rem;
+  margin-top: 10px;
+}
+.feature-items{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  justify-content: space-between;
+  margin-left: 20px;
+  
+}
+.feature-items h2{
+  margin-bottom: 20px;
+ 
+}
+
+
+.intern-content h3{
+color: blue;
+}
+.features{
+  background-color: white;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+.features h4{
+ color: blue;
+ margin-top: 20px;
+ 
+}
 @media (max-width: 800px) {
   .hideonmobile {
     display: none;
