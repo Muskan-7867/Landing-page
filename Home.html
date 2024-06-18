@@ -5,113 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .content p{
-          font-size: 20px;
-          font-style: italic;
-        }
-        
-       
-        .container {
-            padding: 20px;
-            text-align: center;
-        }
-        .home-pg {
-            background-color: #f2f2f2;
-            padding: 50px 20px;
-            text-align: center;
-        }
-        .home-pg .btn {
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        .home-pg h1 {
-            margin-top: 20px;
-        }
-        .content {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            padding: 50px 20px;
-        }
-        .content img {
-            max-width: 50%;
-            height: auto;
-        }
-        .intern-content {
-            padding: 50px 20px;
-            text-align: center;
-        }
-        .features {
-            padding: 50px 20px;
-            text-align: center;
-        }
-        .feature-items {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
-        .feature-items p{
-          color: black;
-          font-size: 15px;
-        }
-        .feature-items > div {
-            background-color: #e6e6e6;
-            padding: 20px;
-            margin: 10px;
-            flex-basis: 30%;
-            text-align: center;
-            border-radius: 8px;
-        }
-        .contact {
-            background-color: aliceblue;
-            margin-top: 150px;
-            padding: 20px;
-            height: 400px;
-            text-align: center;
-        }
-        .cont-location {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            margin-top: 10%;
-        }
-        .location, .help {
-            background-color: white;
-            padding: 20px;
-            flex-basis: 45%;
-            text-align: center;
-            border-radius: 8px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 20px;
-        }
-        footer a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        footer .footer-links,
-        footer .footer-social {
-            margin: 10px 0;
-        }
-    </style>
 </head>
 <body id="loginButton">
     <nav class="navbar" id="navbar">
+        
         <a href="#">HOME</a>
         <a href="#">ABOUT</a>
         <a href="#">CONTACT</a>
@@ -145,39 +42,57 @@
             invite you to join us on this exciting journey. Together, we can
             transform the way we learn and create a better future for all.
         </p>
-        <img src="images/about-image.svg" alt="About Us" />
+        <img src="\images\colorkit (1).svg" alt="About Us" />
     </div>
 
-    <div class="intern-content">
-        <h3>Internships</h3>
-        <h2>Our internships</h2>
-        <p>
-            Our internships are available in a range of fields, including Web
-            Development, Machine Learning, Data Science, and more. Interns will have
-            the chance to work on real-world projects, collaborate with teams, and
-            gain valuable insights into their respective industries.
-        </p>
-    </div>
-    
-    <div class="features">
-        <h4>Features</h4>
-        <h2>Features Of Our Internships</h2>
-    </div>
 
+  <div class="intern-content">
+    <h2>Internship Fields</h2>
+    <ul>
+      <li>Web Development</li>
+      <li>Machine Learning</li>
+      <li>Data Science</li>
+      <li>Software Engineering</li>
+      <!-- Add more internship fields as needed -->
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>Features Of Our Internships</h2>
     <div class="feature-items">
-        <div>
-            <h2>Verified Certificates</h2>
-            <p>Get Verified Certificates to prove your hard work!</p>
-        </div>
-        <div>
-            <h2>Networking</h2>
-            <p>Tap into our network and increase your chances of placements.</p>
-        </div>
-        <div>
-            <h2>Hands-on experience</h2>
-            <p>Gain practical experience by working on real-world projects.</p>
-        </div>
+      <div>
+        <h3>Verified Certificates</h3>
+        <p>Get Verified Certificates to prove your hard work!</p>
+      </div>
+      <div>
+        <h3>Networking</h3>
+        <p>Tap into our network and increase your chances of placements.</p>
+      </div>
+      <div>
+        <h3>Hands-on Experience</h3>
+        <p>Gain practical experience by working on real-world projects.</p>
+      </div>
+      <!-- Add more features as needed -->
     </div>
+  </div>
+
+  <div class="additional-content">
+    <h2>Why Choose Us?</h2>
+    <p>
+      Our internship program offers a unique blend of mentorship, professional development,
+      and networking opportunities to help you kickstart your career. Here's why you should
+      choose us:
+    </p>
+    <ul>
+      <li>Experienced mentors to guide you throughout your internship</li>
+      <li>Access to cutting-edge tools and technologies</li>
+      <li>Opportunity to collaborate with diverse teams</li>
+      <li>Potential for full-time employment upon successful completion</li>
+    </ul>
+    <button>Contact Us</button> <!-- Add a call-to-action button -->
+  </div>
+
+
 
     <div class="contact">
         <h3>CONTACT US</h3>
@@ -217,6 +132,8 @@
         </div>
         <p>&copy; 2024 Prodigy Infotech. All rights reserved.</p>
     </footer>
+
+    
 
     <script src="script.js"></script>
 </body>

@@ -36,11 +36,11 @@ window.addEventListener('scroll', function() {
     if (window.scrollY > 0) {
       navbar.style.backgroundColor = 'white'; 
       navbar.querySelectorAll('a').forEach(function(link) {
-        link.style.color = 'blue';
+        link.style.color = 'black';
     });
       // Change to white when scrolled
     } else {
-      navbar.style.backgroundColor = 'blue';
+      navbar.style.backgroundColor = 'black';
       navbar.querySelectorAll('a').forEach(function(link) {
         link.style.color = 'white';
       });
@@ -48,6 +48,33 @@ window.addEventListener('scroll', function() {
     }
   });
 
+  document.getElementById('loginButton').addEventListener('click', function() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var error = document.getElementById('error');
+    if (username === '' || password === '') {
+        error.style.display = 'block';
+    } else {
+        error.style.display = 'none';
+        // Handle login logic here
+        alert('Logged in successfully');
+    }
+});
+
+document.getElementById('togglePassword').addEventListener('click', function () {
+    var passwordField = document.getElementById('password');
+    if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+    } else {
+        passwordField.type = 'password';
+    }
+});
+
+const themeToggleBtn = document.getElementById("themeToggle");
+
+themeToggleBtn.addEventListener("click", function () {
+  document.body.classList.toggle("dark-theme");
+});
 
 
 
