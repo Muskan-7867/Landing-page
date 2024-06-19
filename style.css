@@ -8,6 +8,11 @@
 body {
   font-family: Arial, sans-serif;
   min-height: 100vh;
+  background-image: url('bg/img.avif'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s ease;
 }
 
 .hidden-background {
@@ -57,12 +62,13 @@ nav a {
   align-items: center;
   color: white;
   margin-right: 25px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Ensure color transition */
 }
 
 nav a:hover {
   background-color: white;
-  color: black;
+  color: black !important; /* Use !important to ensure it takes precedence */
+  transform: translateY(-3px); /* Add subtle lift effect */
 }
 
 nav .logo {
@@ -80,6 +86,29 @@ nav li:first-child {
 
 .menu-btn {
   display: none;
+
+}
+
+
+/* Add styles for the scrolled state */
+nav.scrolled {
+  background-color: white;
+}
+
+nav.scrolled a {
+  color: black !important;
+  background-color: white;
+}
+
+/* Specific hover styles for the scrolled state */
+nav.scrolled a:hover {
+  background-color: #555;
+  color: white !important;
+}
+
+nav.scrolled .logo:hover {
+  background-color: transparent;
+  color: black !important;
 }
 
 /* Sidebar */
@@ -97,6 +126,11 @@ nav li:first-child {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  transition: transform 0.3s ease; /* Add transition for smooth sliding animation */
+}
+
+.sidebar.show {
+  transform: translateX(0); /* Slide in from the right */
 }
 
 .sidebar li {
@@ -105,6 +139,19 @@ nav li:first-child {
 
 .sidebar a {
   width: 100%;
+  opacity: 0;
+  animation: fadeInSidebar 0.5s forwards;
+}
+
+@keyframes fadeInSidebar {
+  from {
+    opacity: 0;
+    transform: translateX(-20px); /* Start from left offset */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Fade in while sliding in from the left */
+  }
 }
 
 /* General Elements */
@@ -112,7 +159,8 @@ nav li:first-child {
   padding: 20px;
   text-align: center;
   background-color: black;
-  
+  margin: 20px;
+  border-radius: 10px;
 }
 
 .container p {
@@ -126,6 +174,7 @@ nav li:first-child {
   background-color: white;
   padding: 50px 20px;
   margin: 20px 10%;
+  border-radius: 10px;
   animation: fadeIn 2s ease-in-out;
 }
 
@@ -155,6 +204,9 @@ nav li:first-child {
   justify-content: space-around;
   margin: 0 10%;
   animation: fadeIn 2s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for readability */
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .content p {
@@ -181,6 +233,22 @@ nav li:first-child {
 .intern-content {
   margin-top: 220px;
   text-align: center;
+  color: black;
+  padding: 40px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.background-image {
+  background-image: url('images/bg img.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+.main-intern {
+  padding: 20px;
 }
 
 .intern-content p {
@@ -195,18 +263,20 @@ nav li:first-child {
 }
 
 .intern-content h3 {
-  color: blaack;
+  color: black;
 }
 
-.intern-content li{
+.intern-content li {
   margin-top: 5px;
+  list-style-type: none;
 }
 
 /* Features Section */
 .features {
-  background-color: white;
+  color: black; /* Semi-transparent white for readability */
   margin-top: 100px;
   padding: 50px 20px;
+  border-radius: 10px;
   animation: fadeIn 2s ease-in-out;
 }
 
@@ -228,7 +298,7 @@ nav li:first-child {
 }
 
 .feature-items > div {
-  background-color: #e6e6e6;
+  background-color: white;
   padding: 20px;
   margin: 10px;
   flex-basis: 30%;
@@ -243,10 +313,10 @@ nav li:first-child {
 
 /* Contact Section */
 .contact {
-  background-color: aliceblue;
-  margin-top: 100px;
+  background-color: none; /* Semi-transparent for readability */
+  margin-top: 40px;
   padding: 20px;
-  height: 400px;
+  border-radius: 10px;
   text-align: center;
   animation: fadeIn 2s ease-in-out;
 }
@@ -259,12 +329,11 @@ nav li:first-child {
 
 .contact h2 {
   color: black;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 50px;
 }
 
 .location {
-  background-color: white;
   padding-left: 5%;
 }
 
@@ -308,8 +377,7 @@ footer a {
 
 footer .footer-links,
 footer .footer-social {
- margin-bottom: 15px;
-  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 footer a::after {
@@ -325,13 +393,17 @@ footer a::after {
   transition: transform 0.3s ease;
 }
 
+.help h2 {
+  color: black;
+}
+
 footer a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-.footer-contact p{
-margin-bottom: 15px;
+.footer-contact p {
+  margin-bottom: 15px;
 }
 
 /* Animations */
@@ -362,20 +434,11 @@ margin-bottom: 15px;
   }
 }
 
-
 /* Login Page Styles */
-body {
-  background-image: url('bg/img.avif'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: background-image 0.3s ease;
-}
-
 form {
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent for readability */
   padding: 20px;
   border-radius: 8px;
   max-width: 400px;
@@ -398,6 +461,10 @@ input[type="password"] {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+.menu-btn:hover{
+  background-color: white;
+  color: black;
 }
 
 button {
@@ -457,6 +524,8 @@ button:hover {
 .additional-content {
   padding: 20px;
   text-align: center;
+  color: black;
+  border-radius: 10px;
 }
 
 .additional-content h2 {
@@ -486,7 +555,6 @@ button:hover {
   background-color: #0056b3;
 }
 
-.additional-content p{
+.additional-content p {
   font-size: 20px;
-  
 }
