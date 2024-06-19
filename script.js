@@ -44,9 +44,22 @@ window.addEventListener('scroll', function() {
       navbar.querySelectorAll('a').forEach(function(link) {
         link.style.color = 'white';
       });
-       // Change to blue when at the top
+       
     }
   });
+
+
+  window.addEventListener('scroll', function() {
+    var nav = document.querySelector('nav');
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+      
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+
 
   document.getElementById('loginButton').addEventListener('click', function() {
     var username = document.getElementById('username').value;
