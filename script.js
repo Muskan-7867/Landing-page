@@ -36,11 +36,11 @@ window.addEventListener('scroll', function() {
     if (window.scrollY > 0) {
       navbar.style.backgroundColor = 'white'; 
       navbar.querySelectorAll('a').forEach(function(link) {
-        link.style.color = 'blue';
+        link.style.color = '#0059ff';
     });
       // Change to white when scrolled
     } else {
-      navbar.style.backgroundColor = 'blue';
+      navbar.style.backgroundColor = '#0059ff';
       navbar.querySelectorAll('a').forEach(function(link) {
         link.style.color = 'white';
       });
