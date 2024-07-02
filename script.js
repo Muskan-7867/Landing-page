@@ -36,11 +36,11 @@ window.addEventListener('scroll', function() {
     if (window.scrollY > 0) {
       navbar.style.backgroundColor = 'white'; 
       navbar.querySelectorAll('a').forEach(function(link) {
-        link.style.color = 'black';
+        link.style.color = 'blue';
     });
       // Change to white when scrolled
     } else {
-      navbar.style.backgroundColor = 'black';
+      navbar.style.backgroundColor = 'blue';
       navbar.querySelectorAll('a').forEach(function(link) {
         link.style.color = 'white';
       });
@@ -83,11 +83,7 @@ document.getElementById('togglePassword').addEventListener('click', function () 
     }
 });
 
-const themeToggleBtn = document.getElementById("themeToggle");
 
-themeToggleBtn.addEventListener("click", function () {
-  document.body.classList.toggle("dark-theme");
-});
 
 
 
