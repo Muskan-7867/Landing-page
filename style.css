@@ -619,7 +619,7 @@ footer a:hover::after {
   right: 60px; /* Adjust as needed */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
+   opacity: 0;
   animation: slideInContactForm 1s forwards ease-out;
 }
 
@@ -643,16 +643,6 @@ footer a:hover::after {
   border-radius: 5px;
 }
 
-@keyframes slideInContactForm {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 .contact-form button {
   background-color: #007bff;
   color: #fff;
