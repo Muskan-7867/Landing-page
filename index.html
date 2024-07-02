@@ -30,211 +30,188 @@
     }
     .home-pg .btn {
         padding: 10px 20px;
-        background-color: #333;
+        background-color: blue;
+      ;
         color: white;
         border: none;
         cursor: pointer;
     }
     .home-pg h1 {
         margin-top: 20px;
+        background-color:hsl(191, 57%, 93%); 
     }
-    .content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 50px 20px;
-        background-color: #f2f2f2;
-    }
-    .content img {
-        max-width: 50%;
-        height: auto;
-    }
-    .intern-content {
-        padding: 50px 20px;
-        text-align: center;
-    }
-    .features {
-        padding: 50px 20px;
-        text-align: center;
-    }
-    .feature-items {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 20px;
-    }
-    .feature-items > div {
-        background-color: #e6e6e6;
-        padding: 20px;
-        margin: 10px;
-        flex-basis: 30%;
-        text-align: center;
-        border-radius: 8px;
-    }
-    .contact {
-        
-        padding: 20px;
-        height: 400px;
-        text-align: center;
-    }
-    .cont-location {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 10%;
-    }
-    .location, .help {
-        
-        padding: 20px;
-        flex-basis: 45%;
-        text-align: center;
-        border-radius: 8px;
-    }
-    footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-        margin-top: 20px;
-    }
-    footer a {
-        color: white;
-        text-decoration: none;
-        margin: 0 10px;
-    }
-
-    .feature-items p{
-        color: black;
-        font-size: 15px;
-      }
-    footer .footer-links,
-    footer .footer-social {
-        margin: 10px 0;
-    }
+  
 </style>
 <body id="loginButton">
-    <nav class="navbar" id="navbar"></nav>
-    <div class="container">
-        <h1>Prodigy InfoTech</h1>
-        <p>Providing World Class E-Learning Experince with Real world Internships</p>
+  <nav class="navbar" id="navbar">
+      
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">CONTACT</a>
+      <a href="#">VERIFY</a>
+      <a href="#">INTERNSHIPS</a>
+  </nav>
+
+  <div class="container">
+      <h1>Prodigy InfoTech</h1>
+      <p>Providing World Class E-Learning Experience with Real World Internships</p>
+  </div>
+ 
+
+  <div class="home-pg">
+      <button class="btn">About us</button>
+      <h1>
+          Transforming the Way <br />
+          People Learn
+      </h1>
+  </div>
+<div class="main-intern">
+  <div class="content">
+      <p>
+          Our mission is to create innovative and accessible learning solutions
+          that empower people of all ages and backgrounds to achieve their full
+          potential. Whether you're a student looking to improve your grades, a
+          professional seeking to upskill, or an organization looking to enhance
+          employee training, we have the tools and resources you need to
+          succeed.<br /><br /><br />
+          If you're looking for an innovative and dynamic learning experience that
+          will help you achieve your goals and unlock your full potential, we
+          invite you to join us on this exciting journey. Together, we can
+          transform the way we learn and create a better future for all.
+      </p>
+      <img src="\images\about-image.svg" alt="About Us" />
+  </div>
+</div>
+
+<div class="main-intern">
+
+
+<div class="intern-content">
+  <h2>Internship Fields</h2>
+  <ul>
+    <li>Web Development</li>
+    <li>Machine Learning</li>
+    <li>Data Science</li>
+    <li>Software Engineering</li>
+    <!-- Add more internship fields as needed -->
+  </ul>
+</div>
+<div class="feature-container">
+  <div class="feature-box">
+      <h3>Networking</h3>
+      <p>This is a description for feature 1.</p>
+      <button>Learn More</button>
+  </div>
+  <div class="feature-box">
+      <h3>Experience</h3>
+      <p>This is a description for feature 2.</p>
+      <button>Learn More</button>
+  </div>
+  <div class="feature-box">
+      <h3>Quality</h3>
+      <p>This is a description for feature 3.</p>
+      <button>Learn More</button>
+  </div>
+</div>
+
+<div class="additional-content">
+  <h2>Why Choose Us?</h2>
+  <p>
+    Our internship program offers a unique blend of mentorship, professional development,
+    and networking opportunities to help you kickstart your career. Here's why you should
+    choose us:
+  </p>
+  <ul>
+    <li>Experienced mentors to guide you throughout your internship</li>
+    <li>Access to cutting-edge tools and technologies</li>
+    <li>Opportunity to collaborate with diverse teams</li>
+    <li>Potential for full-time employment upon successful completion</li>
+  </ul>
+  <button>Contact Us</button> <!-- Add a call-to-action button -->
+</div>
+
+</div>
+
+
+
+<div class="contact-section">
+       
+  <div class="container-login">
+      <h3>Contact us</h3>
+      <h1>Let's talk about<br>Love to hear from you!</h1>
+
+  </div>
+      <div class="contact-info">
+          <div class="location">
+              <h2>Our Location</h2>
+              <p>Mumbai - 400018, Maharashtra, India</p>
+          </div>
+          <div class="email">
+              <h2>How Can We Help?</h2>
+              <p><a href="contact@prodigyinfotech.dev">contact@prodigyinfotech.dev</a></p>
+          </div>
       </div>
-      <div class="background-image" >
+      <div class="contact-form">
+          <h2>Send us a Message</h2>
+          <form action="submit_form.php" method="post">
+              <label for="name">Full Name*</label>
+              <input type="text" id="name" name="name" required value="John Doe">
+              
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" required value="example@yourmail.com">
+              
+              <label for="phone">Phone*</label>
+              <input type="tel" id="phone" name="phone" required value="XXXXXXXXXX">
+              
+              <label for="message">Message*</label>
+              <textarea id="message" name="message" required placeholder="Type your message here"></textarea>
+              
+              <button type="submit">Send Message</button>
+          </form>
+      </div>
+  
+</div>
+</main>
 
-      <div class="home-pg">
-        <button class="btn">About us</button>
-        <h1>
-            Transforming the Way <br />
-            People Learn
-        </h1>
-    </div>
-
-    <div class="content">
-        <p>
-            Our mission is to create innovative and accessible learning solutions
-            that empower people of all ages and backgrounds to achieve their full
-            potential. Whether you're a student looking to improve your grades, a
-            professional seeking to upskill, or an organization looking to enhance
-            employee training, we have the tools and resources you need to
-            succeed.<br /><br /><br />
-            If you're looking for an innovative and dynamic learning experience that
-            will help you achieve your goals and unlock your full potential, we
-            invite you to join us on this exciting journey. Together, we can
-            transform the way we learn and create a better future for all.
-        </p>
-        <img src="\images\colorkit (1).svg" alt="About Us" />
-    </div>
-
-    
-
-  <div class="intern-content">
-    <h2>Internship Fields</h2>
-    <ul>
-      <li>Web Development</li>
-      <li>Machine Learning</li>
-      <li>Data Science</li>
-      <li>Software Engineering</li>
-      <!-- Add more internship fields as needed -->
+<footer class="footer">
+<div class="footer-content">
+<div class="footer-left">
+    <h3>Prodigy Company</h3>
+    <p>A leading company in innovation and technology.</p>
+    <p>Mumbai - 400018, Maharashtra, India</p>
+</div>
+<div class="footer-center">
+    <h3>Quick Links</h3>
+    <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
     </ul>
-  </div>
-
-  <div class="features">
-    <h2>Features Of Our Internships</h2>
-    <div class="feature-items">
-      <div>
-        <h3>Verified Certificates</h3>
-        <p>Get Verified Certificates to prove your hard work!</p>
-      </div>
-      <div>
-        <h3>Networking</h3>
-        <p>Tap into our network and increase your chances of placements.</p>
-      </div>
-      <div>
-        <h3>Hands-on Experience</h3>
-        <p>Gain practical experience by working on real-world projects.</p>
-      </div>
-      <!-- Add more features as needed -->
-    </div>
-  </div>
-
-  <div class="additional-content">
-    <h2>Why Choose Us?</h2>
-    <p>
-      Our internship program offers a unique blend of mentorship, professional development,
-      and networking opportunities to help you kickstart your career. Here's why you should
-      choose us:
-    </p>
-    <ul>
-      <li>Experienced mentors to guide you throughout your internship</li>
-      <li>Access to cutting-edge tools and technologies</li>
-      <li>Opportunity to collaborate with diverse teams</li>
-      <li>Potential for full-time employment upon successful completion</li>
+</div>
+<div class="footer-right">
+    <h3>Contact Us</h3>
+    <ul class="footer-contact">
+        <li><i class="fa fa-phone"></i> +91 123 456 7890</li>
+        <li><i class="fa fa-envelope"></i> <a href="mailto:contact@prodigyinfotech.dev">contact@prodigyinfotech.dev</a></li>
+        <li><i class="fa fa-map-marker"></i> Mumbai, India</li>
     </ul>
-    <button>Contact Us</button> <!-- Add a call-to-action button -->
-  </div>
-
-  <div class="contact">
-    <h3>CONTACT US</h3>
-    <h2>
-      Let’s talk about <br />
-      Love to hear from you!
-    </h2>
-  </div>
-  <div class="cont-location">
-    <div class="location">
-      <h2>Our Location</h2>
-      <h4>Mumbai - 400018, Maharashta, India</h4>
-    </div>
-    <div class="help">
-      <h2>How Can We Help?</h2>
-      <h4>contact@prodigyinfotech.dev</h4>
-    </div>
-  </div>
-  </div>
-
-  <footer>
-    <div class="footer-links">
-      <a href="#">About Us</a> |
-      <a href="#">Services</a> |
-      <a href="#">Privacy Policy</a> |
-      <a href="#">Terms of Service</a> |
-      <a href="#">Contact</a>
-    </div>
-    <div class="footer-social">
-      Follow us on
-      <a href="#">Facebook</a>,
-      <a href="#">Twitter</a>,
-      <a href="#">LinkedIn</a>,
-      <a href="#">Instagram</a>
-    </div>
-
-    <div class="footer-contact">
-      <p>Email: info@prodigyinfotech.dev | Phone: +91 12345 67890</p>
-    </div>
-    <p>&copy; 2024 Prodigy Infotech. All rights reserved.</p>
-  </footer>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2024 Prodigy Company. All rights reserved.</p>
+<ul class="footer-social">
+    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+</ul>
+</div>
+</footer>
 
   
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+</html>
 </html>
