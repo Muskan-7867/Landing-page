@@ -5,25 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body{
+display: flex;
+justify-content: center;
+align-items: center;
+
+      }
+      .btn{
+width: 120px;
+height: 30px;
+      }
+    </style>
   </head>
   <body id='loginButton'>
     <nav class="navbar" id="navbar"></nav>
-    
-   
-    <div class="home-pg" >
-      <button class="btn">About us</button>
-      <h1>Transforming the Way
-        <br/> People Learn</h1>
+ 
+      <div class="bg-white shadow-lg rounded-lg flex flex-col md:flex-row max-w-6xl mt-[10%] my-10 p-8 md:p-16">
+        <div class="md:w-1/2  mt-20 flex flex-col justify-center">
+          <button class="bg-blue-600 rounded-md  text-white   text-xl btn">About Us</button>
+          <h2 class="text-gray-800 text-4xl font-semibold mb-6">Transforming the Way People Learn</h2>
+          <p class="text-gray-600 text-lg mb-4">
+            Our mission is to create innovative and accessible learning solutions
+            that empower people of all ages and backgrounds to achieve their full
+            potential. Whether you're a student looking to improve your grades, a
+            professional seeking to upskill, or an organization looking to
+            enhance employee training, we have the tools and resources you need
+            to succeed.
+          </p>
+          <p class="text-gray-600 text-lg">
+            If you're looking for an innovative and dynamic learning experience
+            that will help you achieve your goals and unlock your full potential,
+            we invite you to join us in this exciting journey. Together, we can
+            transform the way we learn and create a better future for all.
+          </p>
+        </div>
+        <div class="md:w-1/2 flex justify-center items-center mt-8 md:mt-0">
+          <img src="./images/about-image.svg" 
+               alt="Illustration of a digital interface with charts, graphs, and learning resources displayed on a screen" 
+               class="rounded-md shadow-md" />
+        </div>
       </div>
-      <div class="main-intern">
-      <div class="content">
-        <p>Our mission is to create innovative and accessible learning solutions that empower people of all ages and backgrounds to achieve their full potential.
-         Whether you're a student looking to improve your grades, a professional seeking to upskill, or an organization looking to enhance employee training, we have the tools and resources you need to succeed.<br /><br/><br />
-         If you're looking for an innovative and dynamic learning experience that will help you achieve your goals and unlock your full potential, we invite you to join us on this exciting journey. Together, we can transform the way we 
-        learn and create a better future for all.</p>
-        <img  src='/images/about-image.svg'/>
-    </div>
-  </div>
+    </body>        
   
     
 
